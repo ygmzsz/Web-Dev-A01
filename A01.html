@@ -17,11 +17,21 @@
         </div>
     </div>
 
+    <div class="expBox" id="expBox">
+        <div id="explanation">
+            <p> This is a typical Hi-Lo game, where the player
+                guesses values in the range from 1 and a number specified by the player
+                until the correct number is found.
+            </p>
+        </div>
+    </div>
+    
+
     <div class="hidden" id="boxHide">
         <div class="box2" id="box2">
             <div id="numberPrompt">
-                <p>Welcome <span id="Name"></span></p>
-                <input type="number" id="maxGuessInput" placeholder="Enter number 1-999"> 
+                <p>Welcome <span id="Name"></span> please enter the max</p>
+                <input type="number" id="maxGuessInput" placeholder="Range: 1-999"> 
                 <button onclick="MaxGuessEntry()">Submit Number</button>
             </div>
         </div>
@@ -39,9 +49,5 @@
             </div>
         </div>
     </div>
-
-    <script>
-       
-    </script>
 </body>
 </html>
