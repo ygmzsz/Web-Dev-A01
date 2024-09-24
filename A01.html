@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hi-Lo Game</title>
+    <link rel="stylesheet" href="A01.css">
+    <script src="A01.js"></script>
+</head>
+<body>
+    <h1>Hi-Lo Game</h1>
+
+    <div class="box" id="box">
+        <div id="playerNamePrompt">
+            <input type="text" id="name" placeholder="Please enter your name"> 
+            <button onclick="NameEntry()">Submit Name</button>
+        </div>
+    </div>
+
+    <div class="hidden" id="boxHide">
+        <div class="box2" id="box2">
+            <div id="numberPrompt">
+                <p>Welcome <span id="Name"></span></p>
+                <input type="number" id="maxGuessInput" placeholder="Enter number 1-999"> 
+                <button onclick="MaxGuessEntry()">Submit Number</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="hidden" id="boxHide2">
+        <div class="box3" id="box3">
+            <div id="game">
+                <p>Make Your Guess <span id="Name">!</span></p>
+                <input type="number" id="guessInput" placeholder="Enter Guess"> 
+                <button onclick="MakeGuess()">Make Guess</button>
+                <p id="feed"></p>
+                <p id="range"></p>
+                <button class="hidden" id="playAgainButton" onclick="ResetGame()">Play Again</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+       
+    </script>
+</body>
+</html>

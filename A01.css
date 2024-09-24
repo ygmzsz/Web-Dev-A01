@@ -1,0 +1,108 @@
+body
+{
+    background-color: hsl(0,0%,15%);
+    font-family: Arial, sans-serif;
+    color: white;
+    font-size: 2rem;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+h1 {
+    margin-bottom: 10px; 
+    font-size: 3rem; 
+}
+
+#playerNamePrompt{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+#numberPrompt{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box{
+    background-color: #444; 
+    padding: 30px; 
+    border-radius: 15px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); 
+    text-align: center;
+}
+
+.box2{
+    background-color: #444; 
+    padding: 30px; 
+    border-radius: 15px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); 
+    text-align: center;
+    font-size: 25px;
+}
+
+.box3{
+    background-color: #444; 
+    padding: 30px; 
+    border-radius: 15px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); 
+    text-align: center;
+    font-size: 25px;
+}
+
+#playerNamePrompt p
+{
+  font-size: 2rem;
+}
+#playerPrompt input
+{
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 15px; 
+    width: 250px; 
+    border-radius: 10px; 
+    border: 1px solid #ccc;
+}
+input{
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 18px; 
+    width: 250px; 
+    border-radius: 10px; 
+    border: 1px solid #ccc;
+}
+
+button {
+    margin: 10px;
+    padding: 10px 30px;
+    color: white;
+    background-color: hsl(39, 100%,50%);
+    padding: 10px 20px;
+    font-size: 18px; 
+    cursor: pointer;
+    border-radius: 10px; 
+    width: 270px; 
+}
+
+button:hover
+{
+    background-color: hsl(39, 100%,65%);
+}
+
+button:active
+{
+    background-color: hsl(39, 100%,75%);
+}
+
+
+
+.hidden {
+    display: none
+}
+
