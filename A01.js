@@ -24,8 +24,8 @@ function MaxGuessEntry() {
     max = parseInt(document.getElementById('maxGuessInput').value.trim());
    
     if (isNaN(max) || max < 1 || max > 999) {
-        document.getElementById('maxGuessInput').placeholder = '';
         document.getElementById('maxGuessInput').value = '';
+        document.getElementById('maxGuessInput').placeholder = 'Not in the 1-999 range';
     } else {
         maxRange = max;
         document.getElementById('boxHide').classList.add('hidden');
