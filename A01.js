@@ -6,21 +6,26 @@ let maxRange = 0;
 
 function NameEntry() {
     playerName = document.getElementById('name').value.trim();
+    
+
 
     if (playerName == '') {
         document.getElementById('name').placeholder = 'You must enter a name'; 
     } else {
+        
         document.getElementById("Name").innerHTML = playerName;
         document.getElementById('box').classList.add('hidden');
         document.getElementById('boxHide').classList.remove('hidden');
+        document.getElementById('expBox').classList.add('hidden'); 
     }
 }
 
 function MaxGuessEntry() {
     max = parseInt(document.getElementById('maxGuessInput').value.trim());
-
+   
     if (isNaN(max) || max < 1 || max > 999) {
-        document.getElementById('maxGuessInput').placeholder = 'You must enter a valid number';
+        document.getElementById('maxGuessInput').placeholder = '';
+        document.getElementById('maxGuessInput').value = '';
     } else {
         maxRange = max;
         document.getElementById('boxHide').classList.add('hidden');
@@ -36,7 +41,6 @@ function GenerateRandomNumber() {
 function MakeGuess() {
     let guess = parseInt(document.getElementById('guessInput').value.trim());
     const feedback = document.getElementById('feed');
-    const box3 = document.getElementById('box3');
 
     if (isNaN(guess) || guess < minRange || guess > maxRange)
     {
@@ -44,10 +48,7 @@ function MakeGuess() {
         return;
     }
 
-    box3.classList.add('show-feedback');
-
-    if (guess < randNum)
-    {
+    if (guess < randNum) {
         feedback.innerText = 'Too low! Try again.';
         minRange = guess + 1; 
     } 
@@ -58,7 +59,7 @@ function MakeGuess() {
     } 
     else 
     {
-        feedback.innerText = 'Congratulations! You guessed the correct number.';
+        feedback.innerText = `Congratulations ${playerName} you have entered the correct number!`;
         playAgainButton.classList.remove('hidden');
     }
 
